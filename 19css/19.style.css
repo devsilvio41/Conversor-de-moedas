@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #8A51FC;
+}
+
+.logo-conversor-de-moedas {
+    display: flex;
+    flex-direction: column;
+    /* Organiza a imagem e o texto um abaixo do outro */
+    align-items: center;
+    /* Centraliza os elementos horizontalmente */
+    justify-content: center;
+    /* Garante o alinhamento vertical se houver altura definida */
+    margin-bottom: 2rem;
+    /* Cria o espaçamento perfeito entre a logo e o card branco */
+}
+
+/* Estilização da logo */
+.app-logo {
+    width: 300px;    /* Controla o tamanho máximo para não quebrar em telas menores (Responsividade) */
+    height: auto;    /* Mantém a proporção da imagem sem distorcer */
+    margin: 20px auto; /* Define margin Top e Bottom */
+}
+
+main {
+    width: 375px;
+    background: #f4f4f4;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;    /* Organiza a imagem e o texto um abaixo do outro */
+    align-items: center;    /* Centraliza os elementos horizontalmente */
+    justify-content: center;    /* Garante o alinhamento vertical se houver altura definida */
+    padding: 2.75rem 1.5rem 1.4375rem; /* Cria o espaçamento perfeito entre a logo e o card branco */
+}
+
+label {
+    color: #777777;
+    font-weight: 200;
+    font-size: 1rem;
+    padding-left: 1.125rem;
+}
+
+select, input {
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    font-weight: 700;
+    height: 3rem;
+    width: 20.43rem;
+    margin-bottom: 1.5rem;
+    
+    /* 👇 Boas práticas de acabamento profissional */
+    appearance: none;          /* Remove a seta padrão do sistema (Chrome/Firefox/Edge) */
+    -webkit-appearance: none;  /* Remove a seta padrão no Safari (iOS/Mac) */
+    -moz-appearance: none;     /* Garante a remoção no Firefox antigo */
+    
+    padding-left: 1rem;        /* Afasta o texto da borda esquerda */
+    padding-right: 2.5rem;     /* Garante que o texto não atropele a seta customizada que você colocar */
+    cursor: pointer;           /* Muda o ponteiro do mouse para indicar que é clicável */
+}
+
+button {
+    
+    background: #772fd3;
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 20.43rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #772fd3;
+    padding: 0.75rem 6.25rem 0.81rem 6.25rem;
+    border-radius: 20px;
+    margin-top: 2.25rem;
+    
+}
+
+.arrow-img {
+    margin: 0.94rem 0;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    gap: 4px;
+}
+
+.currency {
+    color: #777777;
+    font-size: 0.875rem;
+}
+
+.currency-value, .currency-value-to-convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
