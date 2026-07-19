@@ -1,7 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
+    <!-- SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas | Real para Dólar, Euro, Libra e Bitcoin</title>
+
+    <meta name="description"
+        content="Converta valores em Real (BRL) para Dólar (USD), Euro (EUR), Libra (GBP) e Bitcoin (BTC) em tempo real com taxas de câmbio atualizadas automaticamente.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://devsilvio41.github.io/Conversor-de-moedas/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devsilvio41.github.io/Conversor-de-moedas/">
+    <meta property="og:title" content="Conversor de Moedas | Real para Dólar, Euro, Libra e Bitcoin">
+    <meta property="og:description"
+        content="Calcule a conversão do Real para as principais moedas do mercado e criptomoedas com cotação atualizada via API.">
+    <meta property="og:image" content="https://seu-dominio.com.br/19.conversorDeMoedas/19assets/og-image.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://devsilvio41.github.io/Conversor-de-moedas/">
+    <meta name="twitter:title" content="Conversor de Moedas | Real para Dólar, Euro, Libra e Bitcoin">
+    <meta name="twitter:description"
+        content="Calcule a conversão do Real para as principais moedas do mercado e criptomoedas com cotação atualizada via API.">
+    <meta name="twitter:image" content="https://devsilvio41.github.io/Conversor-de-moedas/19assets/og-image.png">
+    <!-- FIM SEO -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -10,7 +35,6 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conversor de moedas</title>
 </head>
 
 <body>
@@ -18,6 +42,7 @@
         <img class="app-logo" src="./19assets/logo.gif" alt="Ilustração de duas mãos trocando uma nota de dinheiro" />
     </header>
     <main>
+        <p></p>
         <label>
             Converter <b>de</b>
             <select>
@@ -38,10 +63,13 @@
             <input type="number" class="input-currency" placeholder="10000.00" />
         </label>
         <button class="convert-button">Converter</button>
+
+        <!-- Para um futuro próximo adicionar valor da cotação em tempo real -->
         <!-- <div class="resultado-box" aria-live="polite">
             <p>Cotação do dia: <strong id="cotacao-atual">Carregando...</strong></p>
             <p>Total em Reais: <span id="total-reais">R$ 0,00</span></p>
         </div> -->
+
         <section>
             <div class="currency-box">
                 <img alt="logo-moedaAconverter" class="logo-conversor" src="./19assets/brl.png" />
@@ -57,8 +85,10 @@
         </section>
     </main>
     <footer class="nask-footer">
-  Desenvolvido por Sílvio Ribas 💻
-</footer>
+        <p>Desenvolvido por Sílvio Ribas 💻 <a href="https://www.linkedin.com/in/silvioribas/" class="link-footer"
+                target="_blank"><b>Linkedin</b></a></p>
+                <p class="devclub">Este projeto faz parte do treinamento Front End <b>DEVCLUB</b></p>
+    </footer>
 </body>
 <script type="text/javascript" src="./19JS/scripts.js" defer></script>
 
