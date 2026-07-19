@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="19css/19.style.css" />
+    <link rel="stylesheet" href="./19css/19.style.css" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,9 +27,11 @@
 
         <label>
             Converter <b>para</b>
-            <select>
-                <option>US$ Dólar americano</option>
-                <option>€ Euro</option>
+            <select class="currency-select">
+                <option value="dolar">US$ Dólar americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="bitcoin">₿ Bitcoin</option>
+                <option value="libra">¥ Libra</option>
             </select>
         </label>
         <label>Valor
@@ -48,13 +50,16 @@
             </div>
             <img class="arrow-img" src="./19assets/arrow.png" aria-hidden="true" alt="arrow" />
             <div class="currency-box">
-                <img alt="logo-moedaCovertida" src="./19assets/dolar.png" />
-                <p class="currency">Dólar americano</p>
+                <img alt="logo-moedaCovertida" class="currency-img" src="./19assets/dolar.png" />
+                <p class="currency currency-card__title--small" id="currency-name">Dólar americano</p>
                 <p class="currency-value" id="resultado">US$ 0,00</p>
             </div>
         </section>
     </main>
+    <footer class="nask-footer">
+  Desenvolvido por Sílvio Ribas 💻
+</footer>
 </body>
-<script type="text/javascript" src="19JS/scripts.js" defer></script>
+<script type="text/javascript" src="./19JS/scripts.js" defer></script>
 
 </html>
